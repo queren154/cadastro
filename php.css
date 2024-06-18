@@ -1,0 +1,35 @@
+.container{
+    padding-top: 45px;
+    text-align: center;
+}
+.container_table{
+    padding-left: 36%;
+}
+body{
+    color: white;
+    background-image: url('img.jpg');
+    background-size:1900px 800px ;
+    background-repeat: no-repeat;
+    font-size: 25px
+}
+.input{
+    border-radius: 5px 5px 5px;
+    font-size: 17px;
+   
+}
+.btn{
+    font-size: 17px;
+    border-radius: 5px 5px 5px;
+    background-color: black;
+    color: white;
+}
+/* .form {
+    border: 1px solid red;
+    width: 500px;
+    height: 250px;
+    margin-left: 34%;
+    background-color: white;
+    padding-top: 8%;
+    color: black;
+    border-radius: 9px 9px 9px 9px;
+} */

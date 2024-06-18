@@ -1,0 +1,60 @@
+<?php
+include 'conexao.php';
+// echo "<pre>";
+// print_r($_SERVER);
+// echo "</pre>";
+// exit;
+ if ($_SERVER ['REQUEST_METHOD'] == "POST")  {
+    // capturar os dados digitado no  form e salva em variaveis
+    // para  facilitat a manipulação do dados
+    $nome = $_POST['nome'];
+    $sobrenome = $_POST['sobrenome'];
+    $nascimento = $_POST['nascimento'];
+    $endereco = $_POST['endereco'];
+    $telefone = $_POST['telefone'];
+
+
+// vamos abrir a conexao com o banco de dados
+$conexaoComBanco = abrirBanco();
+
+// vamos criar o sql para realizar o insert do dados no BD
+$sql = "INSERT INTO pessoas
+        (nome, sobrenome, nascimento, endereco, telefone)
+        VALUES
+        ('$nome',  '$sobrenome',  '$nascimento',  '$endereco', '$telefone')";
+
+        if ($conexaoComBanco->query($sql) === TRUE ) {
+            echo ": Sucesso ao cadastrar o contado :";
+        } else {
+            echo ": Erro ao cadastrar o contado :";
+        }
+         fecharBanco($conexaoComBanco);
+    
+    }
+?>
+
+
+
+
+
+
+
+
+<?php
+include 'conexao.php';
+// echo "<pre>";
+// print_r($_SERVER);
+// echo "</pre>";
+// exit;
+ if ($_SERVER ['REQUEST_METHOD'] == "POST")  {
+    // capturar os dados digitado no  form e salva em variaveis
+    // para  facilitat a manipulação do dados
+    $nome = $_POST['Descrição'];
+    $sobrenome = $_POST['Data do vale'];
+    $nascimento = $_POST['Valor'];
+    $telefone = $_POST['cadastrar'];
+
+
+// vamos abrir a conexao com o banco de dados
+ }
+?>
